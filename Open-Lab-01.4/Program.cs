@@ -15,8 +15,13 @@ namespace Open_Lab_01._4
             Console.WriteLine("Enter the height value: ");
             Height = Convert.ToInt32(Console.ReadLine());
 
-            int TriArea = (Base * Height) / 2;
-            Console.WriteLine($"TriArea value is {TriArea}");
+            int result2 = TriArea(Base, Height);
+            Console.WriteLine($"TriArea value is {result2}");
+        }
+        private static int TriArea(int Base, int Height)
+        {
+            int result = (Base * Height) / 2;
+            return result;
         }
     }
 }
